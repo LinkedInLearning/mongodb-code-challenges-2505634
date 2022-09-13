@@ -1,0 +1,44 @@
+  [
+    {
+      "name": "Josie",
+      "email": "josie@exmple.com",
+      "phone": "555-1212",
+      "active": false,
+      "customerSince": {
+        "$date": "2022-06-30T00:00:00.001Z"
+      },
+      "favoriteCategories": [
+        "food"
+      ],
+      "orders":[],
+      "addresses": {
+        "billing": {
+          "address": "222 Some Rd",
+          "city": "Some Town",
+          "state": "FL",
+          "zip": "12345"
+        }
+      }
+    },
+    {
+      "name": "Gene",
+      "email": "gene@exmple.com",
+      "phone": "555-1212",
+      "active": false,
+      "customerSince": {
+        "$date": "2021-10-30T00:00:00.001Z"
+      },
+      "favoriteCategories": [
+        "sports"
+      ],
+      "orders":[],
+      "addresses": {
+        "billing": {
+          "address": "222 Some Rd",
+          "city": "Some Town",
+          "state": "FL",
+          "zip": "12345"
+        }
+      }
+    }
+  ]
