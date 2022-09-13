@@ -1,0 +1,3 @@
+db.customers.insertOne({
+
+})
