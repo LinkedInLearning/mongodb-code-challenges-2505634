@@ -26,7 +26,7 @@ db.customers.find({ "addresses.billing.state": "FL" })
 db.customers.find(
   {
     "addresses.shipping": { $exists: true },
-    $expr: { $eq: ["$addresses.billing.state", "$addresses.shipping.state"] }
+    $expr: { $ne: ["$addresses.billing.state", "$addresses.shipping.state"] }
   },
   { name: 1, "addresses.billing.state": 1, "addresses.shipping.state": 1, _id: 0 }
 )
