@@ -5,7 +5,7 @@
 Use find() along with any required query operators to run the following queries in the customers collection, returning only the customers name, email, and phone number
 
 1. All customers that do not have a shipping address
-1. All customers whose shipping address is in the state of Florida ("FL'")
+1. All customers whose billing address is in the state of Florida ("FL'")
 1. All customers who have a shipping address with a different state from their billing address.
    - (Hint: you'll need to use an `$expr` to solve this one!)
 
@@ -21,12 +21,12 @@ Use find() along with any required query operators to run the following queries 
 ```javascript
 db.customers.find({ "addresses.shipping": { $exists: false } })
 
-db.customers.find({ "addresses.shipping.state": "FL" })
+db.customers.find({ "addresses.billing.state": "FL" })
 
 db.customers.find(
   {
     "addresses.shipping": { $exists: true },
-    $expr: { $eq: ["$addresses.billing.state", "$addresses.shipping.state"] }
+    $expr: { $ne: ["$addresses.billing.state", "$addresses.shipping.state"] }
   },
   { name: 1, "addresses.billing.state": 1, "addresses.shipping.state": 1, _id: 0 }
 )

@@ -4,7 +4,7 @@
 
 Use find() along with proper query operators to run the following queries in the customers collection, returning only the customers name, email, and phone number
 
-1. All customers that have joined on or after September 1, 2021
+1. All customers that have joined on or after March 1, 2021
 1. Active customers whose names are "John" or "Cathy" using the $ in query operator
 
 ### Hints
@@ -26,7 +26,7 @@ Query Operator Syntax:
 
 ```javascript
 // Customers that have joined since 9/1/2021
-db.customers.find({ customerSince: { $gte: ISODate('2021-09-01') } })
+db.customers.find({ customerSince: { $gte: ISODate('2022-03-01') } })
 
 // Active customers named john or cathy
 db.customers.find({ active: true, name: { $in: ["John", "Cathy"] } })

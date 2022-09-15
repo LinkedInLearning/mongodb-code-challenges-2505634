@@ -26,8 +26,8 @@ db.customers.find({ orders: { $size: 0 } }, { _id: 0, name: 1 })
 db.customers.find({ favoriteCategories: { $exists: false } }, { _id: 0, name: 1 })
 
 // Array contains a value, 2 ways
-db.customers.find({ favoriteCategories: 'sports' });
-db.customers.find({ favoriteCategories: { $elemMatch: { $eq: 'sports' } } }, { _id: 0, name: 1 })
+db.customers.find({ favoriteCategories: 'sports' },  { _id: 0, name: 1, favoriteCategories:1 });
+db.customers.find({ favoriteCategories: { $elemMatch: { $eq: 'sports' } } }, { _id: 0, name: 1, favoriteCategories:1 })
 ```
 
 ### Expected Output
