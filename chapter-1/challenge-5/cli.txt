@@ -1,9 +1,0 @@
-mongoimport --uri
-mongodb+srv://<USERNAME>:<PASSWORD>@<CLUSTER_NAME>/<DATABASE> --collection <COLLECTION> --type json --file <FILENAME>
-
-mongoimport --uri mongodb://localhost:27017/store --collection customers --type json --jsonArray --file ./data.json
-
-
-EXPORT
-
-mongoexport --uri mongodb://localhost:27017/store --collection customers --jsonArray --out customers.json
