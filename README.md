@@ -1,34 +1,26 @@
-# MongoDB Code Challenges
-This is the repository for the LinkedIn Learning course MongoDB Code Challenges. The full course is available from [LinkedIn Learning][lil-course-url].
+# Level Up: MongoDB
+This is the repository for the LinkedIn Learning course Level Up: MongoDB. The full course is available from [LinkedIn Learning][lil-course-url].
 
-_See the readme file in the main branch for updated instructions and information._
-## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+![Level Up: MongoDB][lil-thumbnail-url] 
 
-## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
-
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
-
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
-
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
+Hone your skills in the core concepts of working with a MongoDB database in this course with instructor John Cokos. John delves into the CRUD operations—create, read, update, delete—with MongoDB databases. He presents challenges to teach you how to create a database, document schemas, and validation rules, as well as adding documents in those collections manually and through importing and exporting. John then delves into the many ways to query MongoDB databases using JavaScript in MongoShell, Compass, and advanced filtering and aggregations. The challenge series finishes up with some exercises related to updating and deleting documents and collections.
 
 ## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+1. A MongoDB database (MongoDB Atlas, Community Edition)
+2. Install MongoDB Shell
+3. Install MongoDB Compass UI
+4. (optional) Install Moon Modeler
 
 
-[0]: # (Replace these placeholder URLs with actual course URLs)
+### Instructor
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+John Cokos 
+                            
 
+
+                            
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/john-cokos).
+
+[lil-course-url]: https://www.linkedin.com/learning/level-up-mongodb?dApp=59033956
+[lil-thumbnail-url]: https://cdn.lynda.com/course/2505634/2505634-1668634662776-16x9.jpg
